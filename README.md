@@ -1,6 +1,12 @@
 # Mods for mc.azaleaplays.com
 
-Below are mods with their respective links. The 
+## Table of contents
+
+* [Server Side Mods](#server-side-mods)
+* [Datapacks](#datapacks)
+* [Suggested Client Side Mods](#suggested-client-side-mods)
+* [Shader Mods](#shader-mods)
+* [Custom Recipes](#custom-recipes)
 
 ## Server Side Mods
 
@@ -50,43 +56,6 @@ Below are mods with their respective links. The
 * Silence Mobs - Make mobs silent with a nametag - [video](https://www.youtube.com/watch?v=lfcwKXhjC9Y&t=487s)
 * Wandering Trages - Trade with wandering trader to get mini blocks - [video](https://www.youtube.com/watch?v=L3En7cuOdHY)
 
-### Custom Recipes
-
-**Cobbled deepslate compatable versions for:**
-
-* Brewing Stand
-* Dispenser
-* Dropper
-* Lever
-* Observer
-* Piston
-
-**Blackstone**
-
-Recipe uses a mix of cobblestone/deepslate and charcoal/coal (can be in whatever mix is wanted)
-
-![blackstone](recipes/blackstone.png)
-
-**Bundle**
-
-![bundle](recipes/bundle.png)
-
-**Chainmail Armor**
-
-![chainmail](recipes/chainmail_armor.png)
-
-**String**
-
-![string](recipes/string.png)
-
-**Gunpowder**
-
-![gunpowder](recipes/gunpowder.png)
-
-**Leather**
-
-![leather](recipes/leather.png)
-
 ## Suggested Client Side Mods
 
 ### [Fabric Api](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
@@ -123,7 +92,7 @@ Recipe uses a mix of cobblestone/deepslate and charcoal/coal (can be in whatever
 
 * Shows preview of what's inside shulker boxes
 
-## Shaders Mods
+## Shader Mods
 
 > Note: Optifine, Iris, and Sodium are all currently being worked on for 1.17, so if a stable version might not be ready yet
 
@@ -139,3 +108,59 @@ Recipe uses a mix of cobblestone/deepslate and charcoal/coal (can be in whatever
 ### [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)
 
 * A rendering engine replacement mod to improve minecraft performance
+
+
+## Custom Recipes
+
+**Cobbled deepslate compatable versions for:**
+
+* Brewing Stand
+* Dispenser
+* Dropper
+* Lever
+* Observer
+* Piston
+
+**Blackstone**
+
+Recipe uses a mix of cobblestone/deepslate and charcoal/coal (can be in whatever mix is wanted)
+
+![blackstone](recipes/blackstone.png)
+
+**Bundle**
+
+![bundle](recipes/bundle.png)
+
+**Chainmail Armor**
+
+![chainmail](recipes/chainmail_armor.png)
+
+**String**
+
+![string](recipes/string.png)
+
+**Gunpowder**
+
+![gunpowder](recipes/gunpowder.png)
+
+**Leather**
+
+![leather](recipes/leather.png)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+###### Hi there <3 o/
