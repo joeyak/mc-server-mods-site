@@ -1,5 +1,7 @@
 # Mods for mc.azaleaplays.com
 
+The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
+
 ## Table of contents
 
 * [Server Side Mods](#server-side-mods)
