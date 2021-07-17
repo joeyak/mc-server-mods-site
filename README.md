@@ -65,12 +65,28 @@ Below are mods with their respective links. The
 
 Recipe uses a mix of cobblestone/deepslate and charcoal/coal (can be in whatever mix is wanted)
 
-![recipe](recipes/blackstone_1.png)
-![recipe](recipes/blackstone_2.png)
+![blackstone](recipes/blackstone_1.png)
+![blackstone](recipes/blackstone_2.png)
 
+**Bundle**
 
+![bundle](recipes/bundle_leather.png)
+![bundle](recipes/bundle_hide.png)
 
+**Chainmail Armor**
 
+![chainmail helmet](recipes/chainmail_helmet.png)
+![chainmail chestplate](recipes/chainmail_chestplate.png)
+![chainmail leggings](recipes/chainmail_leggings.png)
+![chainmail boots](recipes/chainmail_boots.png)
+
+**String**
+
+![string](recipes/string.png)
+
+**leather**
+
+![leather](recipes/leather.png)
 
 ## Suggested Client Side Mods
 
