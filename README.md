@@ -96,12 +96,13 @@ The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
 
 ## Shader Mods
 
-> Note: Optifine, Iris, and Sodium are all currently being worked on for 1.17, so if a stable version might not be ready yet
+Note: Optifine, Iris, and Sodium are all currently being worked on for 1.17, so if a stable version might not be ready yet
 
 ### [OptiFabric](https://www.curseforge.com/minecraft/mc-mods/optifabric)
 
 * Allows optifine to be used with fabric (***read the installing section on the curseforge page***)
-* Optifine needs to be downloaded separately https://optifine.net/downloads
+
+**Optifine needs to be downloaded separately https://optifine.net/downloads**
 
 ### [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
 
@@ -111,6 +112,10 @@ The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
 
 * A rendering engine replacement mod to improve minecraft performance
 
+### Possible Shaders
+
+* [Complementary](https://www.curseforge.com/minecraft/customization/complementary-shaders)
+* [Slidurs Vibrant Shaders](https://sildurs-shaders.github.io/downloads/)
 
 ## Custom Recipes
 
