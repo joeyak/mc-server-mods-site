@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.min.js"></script>
+<script type="text/plain" src="https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.min.js"></script>
 
 # Mods for mc.azaleaplays.com
 
