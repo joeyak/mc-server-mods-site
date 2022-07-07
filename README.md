@@ -1,6 +1,17 @@
+<script src="https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.min.js"></script>
+
 # Mods for mc.azaleaplays.com
 
 The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
+
+Start: <span id="timeStart"></span>
+
+<script>
+  let startDate = new Date(2022, 07, 16)
+  setInterval(() => {
+    document.getElementById("timeStart").innerText = countdown(startDate).toString();
+  }, 1000)
+</script>
 
 ## Table of contents
 
