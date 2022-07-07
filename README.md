@@ -1,8 +1,3 @@
----
-customjs:
-  - https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.min.js
----
-
 <script src="https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.min.js"></script>
 
 # Mods for mc.azaleaplays.com
