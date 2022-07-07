@@ -39,9 +39,9 @@ Url: `mc.azaleaplays.com`
 
 ### Server Start: <span id="timeStart"></span>
 
-### Nether: <span id="timeNether"></span>
+### Enter the Nether: <span id="timeNether"></span>
 
-### Server Start: <span id="timeEnd"></span>
+### Enter the End: <span id="timeEnd"></span>
 
 ## Table of contents
 
