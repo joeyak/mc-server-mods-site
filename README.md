@@ -1,42 +1,64 @@
-<script type="text/plain" src="https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.min.js">
-</script>
-
-# Mods for mc.azaleaplays.com
-
-The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
-
-Start: <span id="timeStart"></span>
-
 <script>
-  let startDate = new Date(2022, 07, 16)
+/* My Stuff 19*/
+  let startDate = new Date(Date.UTC(2022, 6, 16, 19, 0, 0));
+  let netherDate = new Date(startDate);
+  let endDate = new Date(startDate);
+
+  netherDate.setDate(netherDate.getDate() + 7);
+  endDate.setDate(endDate.getDate() + 14);
+
   setInterval(() => {
-    document.getElementById("timeStart").innerText = countdown(startDate).toString();
+    fetch("https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.js")
+        .then(res => res.text())
+        .then(txt => {
+            var js = document.createElement("script");
+            js.textContent = txt;
+
+            document.head.appendChild(js);
+        })
+        .then(_ => {
+          let now = new Date();
+          document.getElementById("timeStart").innerText = now < startDate ? countdown(startDate).toString() : "Live!";
+          document.getElementById("timeNether").innerText = now < netherDate ? countdown(netherDate).toString() : "Live!";
+          document.getElementById("timeEnd").innerText = now < endDate ? countdown(endDate).toString() : "Live!";
+        });
   }, 1000)
 </script>
+
+<style>
+  img {
+    width: 400px;
+  }
+</style>
+
+# AzaleaPlays Server Info
+
+Url: `mc.azaleaplays.com`
+
+## Dates
+
+### Server Start: <span id="timeStart"></span>
+
+### Nether: <span id="timeNether"></span>
+
+### Server Start: <span id="timeEnd"></span>
 
 ## Table of contents
 
 * [Server Side Mods](#server-side-mods)
 * [Datapacks](#datapacks)
 * [Suggested Client Side Mods](#suggested-client-side-mods)
-* [Shader Mods](#shader-mods)
 * [Custom Recipes](#custom-recipes)
 
 ## Server Side Mods
 
-### [Invisible Frames](https://www.curseforge.com/minecraft/mc-mods/invisible-frames)
+### [Copper Hopper](https://www.curseforge.com/minecraft/mc-mods/copper-hopper)
 
-* Shift and punch to toggle frame visibility
+* Hopper Item Filtering
 
-### [FallingTree](https://www.curseforge.com/minecraft/mc-mods/falling-tree)
+### [DeathLog](https://www.curseforge.com/minecraft/mc-mods/deathlog)
 
-* When you chop a log with an axe, it will replace it with a block from the top of the tree
-* Hold shift while chopping to disable the breaking mode
-
-### [Connected Doors](https://www.curseforge.com/minecraft/mc-mods/connected-doors)
-
-* Double doors open and close together by right clicking and redstone
-* Client Side optional
+* Shows information on your deaths
 
 ### [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
 
@@ -45,84 +67,88 @@ Start: <span id="timeStart"></span>
 
 ## Datapacks
 
-### [William Wythers Overhaul Overworld](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld/)
+### [Terralith](https://www.curseforge.com/minecraft/mc-mods/terralith)
 
-* Alternative terrain generation
-* Addons
-  * [Phantasmal Forest](https://www.planetminecraft.com/data-pack/phantasmal-forest-add-on-for-william-wythers-overhauled-overworld-1-16-5/)
-  * [Caves and Cliffs](https://www.planetminecraft.com/data-pack/william-wythers-caves-and-cliffs-add-on-for-overhauled-overworld-1-17/)
-  * [More Structures](https://www.planetminecraft.com/data-pack/more-structures-add-on-for-william-wythers-overhauled-overworld-1-16-4/)
+* Overworld Terrain Generation
 
-### [BlazeandCave's Advancements Pack](https://www.curseforge.com/minecraft/customization/blazeandcaves-advancements-pack)
+### [Incendium](https://www.curseforge.com/minecraft/mc-mods/incendium)
 
-* Lots and lots of advancements
-* Rewards are disabled
+* Nether Terrain Generation
+
+### [Nullscape](https://www.curseforge.com/minecraft/mc-mods/nullscape)
+
+* End Terrain Generation
+
+### [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)
+
+* Adds a variety of structures
+
+### [Towns and Towers - Structure Add-on](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers-structure-add-on)
+
+* Add more villages, outposts, and Terralith structures
 
 ### [Vanilla Tweaks](https://vanillatweaks.net/picker/datapacks/)
 
 * Armor Statues - Can make Armor Statues change potition and hold items - [video](https://www.youtube.com/watch?v=nV9-_RacnoI)
-* Armored Elytra - Combine elytras and chestplates - [video](https://www.youtube.com/watch?v=UCUivDpVDhE)
-* Unlock All Recipes
 * Custom Nether Portals - Nether portals can have different shapes now - [video](https://www.youtube.com/watch?v=WfqUtUhI7qM)
-* Player Head Drops - [video](https://www.youtube.com/watch?v=Usb1mEIK_wQ)
 * Double Shulker Shells - Killing a shulker will give 2 shells - [video](https://www.youtube.com/watch?v=lfcwKXhjC9Y&t=319s)
-* More Mob Heads - Killing mobs sometimes gives heads - [video](https://www.youtube.com/watch?v=lfcwKXhjC9Y&t=487s)
-* Silence Mobs - Make mobs silent with a nametag - [video](https://www.youtube.com/watch?v=lfcwKXhjC9Y&t=487s)
-* Wandering Trages - Trade with wandering trader to get mini blocks - [video](https://www.youtube.com/watch?v=L3En7cuOdHY)
+* Track Raw Statistics - Stats tracking
+* Track Statistics - More stats tracking
 
 ## Suggested Client Side Mods
 
-### [Fabric Api](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
+The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
 
-* Required for some client side mods
+A curseforge profile with the suggested mods and the server pre added can be found [here](https://www.azaleaplays.com/minecraft/curseforge-profiles/Brooke%20Server%20Summer%202022-1.0.zip)
+
+The mods in the profile are summarized below
 
 ### [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
 
 * Allows proximity voice chat
-* Version [1.17.1-1.0.0](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3378616) is required
+* Version [1.19-2.2.45](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3825854) is required
+* Is compatible with Sound Physics Remastered
 
-### [Axolotl Bucket Fix](https://www.curseforge.com/minecraft/mc-mods/axolotl-bucket-fix)
+### [Better Recipe Books](https://www.curseforge.com/minecraft/mc-mods/brb)
 
-* Changes icons to show what color Axolotl is in the bucket
+* Adds some quality of life changes to the recipe book
 
-### [Connected Doors](https://www.curseforge.com/minecraft/mc-mods/connected-doors)
+### [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads)
 
-* Double doors open and close together by right clicking and redstone
-* Installing this client side will make the door opening and closing sync with eachother
+* Shows players head next to chat message
 
-### [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu)
+### [Crowmap](https://www.curseforge.com/minecraft/mc-mods/crowmap)
 
-* Adds a mod menu to allow setting some mod options and seeing what is installed
+* Updates map in inventory instead of having to hold it
 
-### [Mouse Wheelie](https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie)
+### [DeathLog](https://www.curseforge.com/minecraft/mc-mods/deathlog)
 
-* Client side inventory stuff like sorting inventory, slot refilling, etc.
+* DeathLog tracks your deaths in all worlds and servers
 
-### [Quick Spyglasser](https://www.curseforge.com/minecraft/mc-mods/quick-spyglasser)
+### [Inventory Sorting](https://www.curseforge.com/minecraft/mc-mods/inventory-sorting)
 
-* Like optifine zoom, but it will use the spyglass if you have it in your inventory
+* Adds multiple ways to sort inventories
+
+### [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
+
+* Shaders mod that works with sodium
+
+### [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)
+
+* Increases framerate and reduces microstutters
 
 ### [ShulkerBox Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)
 
 * Shows preview of what's inside shulker boxes
 
-## Shader Mods
+### [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered)
 
-Note: Optifine, Iris, and Sodium are all currently being worked on for 1.17, so if a stable version might not be ready yet
+* Adds physics to sounds
+* Works with Simple Voice Chat
 
-### [OptiFabric](https://www.curseforge.com/minecraft/mc-mods/optifabric)
+### [Spyglass Improvments](https://www.curseforge.com/minecraft/mc-mods/spyglass-improvements)
 
-* Allows optifine to be used with fabric (***read the installing section on the curseforge page***)
-
-**Optifine needs to be downloaded separately https://optifine.net/downloads**
-
-### [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
-
-* Another shaders mod that is paired with Sodium (in 1.16, it gave better fps than optifine)
-
-### [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)
-
-* A rendering engine replacement mod to improve minecraft performance
+* Adds various functionality and improvements to the vanilla minecraft spyglass
 
 ### Possible Shaders
 
@@ -131,40 +157,28 @@ Note: Optifine, Iris, and Sodium are all currently being worked on for 1.17, so 
 
 ## Custom Recipes
 
-**Cobbled deepslate compatable versions for:**
+These recipes were pulled from [vanillatweaks](https://vanillatweaks.net/picker/crafting-tweaks/)
 
-* Brewing Stand
-* Dispenser
-* Dropper
-* Lever
-* Observer
-* Piston
+![Unpackable Wool](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/unpackable%20wool.png?v2)
 
-**Blackstone**
+![Unpackable Ice](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/unpackable%20ice.png?v2)
 
-Recipe uses a mix of cobblestone/deepslate and charcoal/coal (can be in whatever mix is wanted)
+![Unpackable Nether Wart](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/unpackable%20nether%20wart.png?v2)
 
-![blackstone](recipes/blackstone.png)
+![Craftable Bundles Leather](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20bundles%20leather.png?v2)
 
-**Bundle**
+![Craftable Name Tags](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20name%20tags.png?v2)
 
-![bundle](recipes/bundle.png)
+![Craftable Blackstone](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20blackstone.png?v2)
 
-**Chainmail Armor**
+![Craftable Horse Armor](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20horse%20armor.png?v2)
 
-![chainmail](recipes/chainmail_armor.png)
+![Rotten Flesh to Leather](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/rotten%20flesh%20to%20leather.png?v2)
 
-**String**
+![Dropper to Dispenser](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/dropper%20to%20dispenser.png?v2)
 
-![string](recipes/string.png)
+![Blackstone Cobblestone](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/blackstone%20cobblestone.png?v2)
 
-**Gunpowder**
-
-![gunpowder](recipes/gunpowder.png)
-
-**Leather**
-
-![leather](recipes/leather.png)
 
 <br/>
 <br/>
