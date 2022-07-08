@@ -1,10 +1,10 @@
 <script>
-/* My Stuff 19*/
+/* My Stuff */
   let startDate = new Date(Date.UTC(2022, 6, 16, 19, 0, 0));
   let netherDate = new Date(startDate);
   let endDate = new Date(startDate);
 
-  netherDate.setDate(netherDate.getDate() + 7);
+  netherDate.setDate(netherDate.getDate() + 4);
   endDate.setDate(endDate.getDate() + 14);
 
   setInterval(() => {
