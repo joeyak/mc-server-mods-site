@@ -150,10 +150,10 @@ The mods in the profile are summarized below
 
 * Adds various functionality and improvements to the vanilla minecraft spyglass
 
-### Possible Shaders
+### Brooke's Favorite Shaders
 
-* [Complementary](https://www.curseforge.com/minecraft/customization/complementary-shaders)
-* [Slidurs Vibrant Shaders](https://sildurs-shaders.github.io/downloads/)
+* [Complementary](https://www.complementary.dev/)
+* [Slidurs Vibrant Shaders](https://sildurs-shaders.github.io/)
 
 ## Custom Recipes
 
