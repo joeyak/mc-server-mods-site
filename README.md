@@ -5,6 +5,7 @@
   let endDate = new Date(startDate);
 
   netherDate.setDate(netherDate.getDate() + 4);
+  netherDate.setHours(netherDate.getHours() + 2);
   endDate.setDate(endDate.getDate() + 14);
 
   setInterval(() => {
