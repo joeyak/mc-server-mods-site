@@ -21,7 +21,7 @@
           let now = new Date();
           document.getElementById("timeStart").innerText = now < startDate ? countdown(startDate).toString() : "Live!";
           document.getElementById("timeNether").innerText = now < netherDate ? countdown(netherDate).toString() : "Live!";
-          document.getElementById("timeEnd").innerText = now < endDate ? countdown(endDate).toString() : "Live!";
+          // document.getElementById("timeEnd").innerText = now < endDate ? countdown(endDate).toString() : "Live!";
         });
   }, 1000)
 </script>
@@ -42,7 +42,7 @@ Url: `mc.azaleaplays.com`
 
 ### Enter the Nether: <span id="timeNether"></span>
 
-### Enter the End: <span id="timeEnd"></span>
+### Enter the End: <span id="timeEnd">TBD</span>
 
 ## Table of contents
 
