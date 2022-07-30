@@ -1,29 +1,29 @@
 <script>
 /* My Stuff */
-  let startDate = new Date(Date.UTC(2022, 6, 16, 19, 0, 0));
-  let netherDate = new Date(startDate);
-  let endDate = new Date(startDate);
+  // let startDate = new Date(Date.UTC(2022, 6, 16, 19, 0, 0));
+  // let netherDate = new Date(startDate);
+  // let endDate = new Date(startDate);
 
-  netherDate.setDate(netherDate.getDate() + 4);
-  netherDate.setHours(netherDate.getHours() + 2);
-  endDate.setDate(endDate.getDate() + 14);
+  // netherDate.setDate(netherDate.getDate() + 4);
+  // netherDate.setHours(netherDate.getHours() + 2);
+  // endDate.setDate(endDate.getDate() + 14);
 
-  setInterval(() => {
-    fetch("https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.js")
-        .then(res => res.text())
-        .then(txt => {
-            var js = document.createElement("script");
-            js.textContent = txt;
+  // setInterval(() => {
+  //   fetch("https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.js")
+  //       .then(res => res.text())
+  //       .then(txt => {
+  //           var js = document.createElement("script");
+  //           js.textContent = txt;
 
-            document.head.appendChild(js);
-        })
-        .then(_ => {
-          let now = new Date();
-          document.getElementById("timeStart").innerText = now < startDate ? countdown(startDate).toString() : "Live!";
-          document.getElementById("timeNether").innerText = now < netherDate ? countdown(netherDate).toString() : "Live!";
-          // document.getElementById("timeEnd").innerText = now < endDate ? countdown(endDate).toString() : "Live!";
-        });
-  }, 1000)
+  //           document.head.appendChild(js);
+  //       })
+  //       .then(_ => {
+  //         let now = new Date();
+  //         document.getElementById("timeStart").innerText = now < startDate ? countdown(startDate).toString() : "Live!";
+  //         document.getElementById("timeNether").innerText = now < netherDate ? countdown(netherDate).toString() : "Live!";
+  //         // document.getElementById("timeEnd").innerText = now < endDate ? countdown(endDate).toString() : "Live!";
+  //       });
+  // }, 1000)
 </script>
 
 <style>
@@ -38,9 +38,9 @@ Url: `mc.azaleaplays.com`
 
 ## Dates
 
-### Server Start: <span id="timeStart"></span>
+### Server Start: <span id="timeStart">Live!</span>
 
-### Enter the Nether: <span id="timeNether"></span>
+### Enter the Nether: <span id="timeNether">Live!</span>
 
 ### Enter the End: <span id="timeEnd">TBD</span>
 
