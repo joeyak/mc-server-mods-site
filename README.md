@@ -1,185 +1,61 @@
-<script>
-/* My Stuff */
-  // let startDate = new Date(Date.UTC(2022, 6, 16, 19, 0, 0));
-  // let netherDate = new Date(startDate);
-  // let endDate = new Date(startDate);
-
-  // netherDate.setDate(netherDate.getDate() + 4);
-  // netherDate.setHours(netherDate.getHours() + 2);
-  // endDate.setDate(endDate.getDate() + 14);
-
-  // setInterval(() => {
-  //   fetch("https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.js")
-  //       .then(res => res.text())
-  //       .then(txt => {
-  //           var js = document.createElement("script");
-  //           js.textContent = txt;
-
-  //           document.head.appendChild(js);
-  //       })
-  //       .then(_ => {
-  //         let now = new Date();
-  //         document.getElementById("timeStart").innerText = now < startDate ? countdown(startDate).toString() : "Live!";
-  //         document.getElementById("timeNether").innerText = now < netherDate ? countdown(netherDate).toString() : "Live!";
-  //         // document.getElementById("timeEnd").innerText = now < endDate ? countdown(endDate).toString() : "Live!";
-  //       });
-  // }, 1000)
-</script>
-
 <style>
   img {
-    width: 400px;
+    width: 300px;
   }
 </style>
 
-# AzaleaPlays Server Info
+# AzaleaPlays SMP Season 5
 
 Url: `mc.azaleaplays.com`
 
-## Dates
+Map: [mc.azaleaplays.com:8090](https://mc.azaleaplays.com:8090)
 
-### Server Start: <span id="timeStart">Live!</span>
+## How to join
 
-### Enter the Nether: <span id="timeNether">Live!</span>
+Be cool enough to get the minecraft role on the discord. Once you're in there use the `/whitelist add <MCNAME>` command and you'll be whitelisted on the server.
 
-### Enter the End: <span id="timeEnd">TBD</span>
+![whitelist command](./whitelist.png)
 
-## Table of contents
+## Modpack
 
-* [Server Side Mods](#server-side-mods)
-* [Datapacks](#datapacks)
-* [Suggested Client Side Mods](#suggested-client-side-mods)
-* [Custom Recipes](#custom-recipes)
+Download the modpack at LINK!
 
 ## Server Side Mods
 
-### [Copper Hopper](https://www.curseforge.com/minecraft/mc-mods/copper-hopper)
+* [Polysit](https://modrinth.com/mod/polysit)
+  * Use `/sit` to sit down like you're riding a minecart
+* [Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat)
+* [AudioPlayer](https://modrinth.com/mod/audioplayer)
+* [Toggle Item Frames](https://modrinth.com/mod/toggle-item-frames)
+* [Inventory Sorting](https://modrinth.com/mod/inventory-sorting)
+* [Simple Discord Link](https://modrinth.com/mod/sdlink)
+* [Squaremap](https://modrinth.com/plugin/squaremap)
+* [DeathLog](https://modrinth.com/mod/deathlog)
+* [Audaki Cart Engine](https://modrinth.com/mod/audaki-cart-engine)
+* [Fabric Seasons](https://modrinth.com/mod/fabric-seasons)
 
-* Hopper Item Filtering
+### Custom Mods
 
-### [DeathLog](https://www.curseforge.com/minecraft/mc-mods/deathlog)
-
-* Shows information on your deaths
-
-### [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
-
-* Allows proximity voice chat
-* Client side required (server can be joined without this mod though)
+* Cart Chunk Loader
+  * Send your friends a message. Name a minecart `ChunkyLoady` and it will load 1 chunk around it allowing it to be sent anywhere
+* MooWorld
+  * Keeps track of the players Moo Score. Kill a cow and the score goes down. Breed a cow and it goes up. Be nice to cows!!!
 
 ## Datapacks
 
-### [Terralith](https://www.curseforge.com/minecraft/mc-mods/terralith)
-
-* Overworld Terrain Generation
-
-### [Incendium](https://www.curseforge.com/minecraft/mc-mods/incendium)
-
-* Nether Terrain Generation
-
-### [Nullscape](https://www.curseforge.com/minecraft/mc-mods/nullscape)
-
-* End Terrain Generation
-
-### [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)
-
-* Adds a variety of structures
-
-### [Towns and Towers - Structure Add-on](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers-structure-add-on)
-
-* Add more villages, outposts, and Terralith structures
-
-### [Vanilla Tweaks](https://vanillatweaks.net/picker/datapacks/)
-
 * Armor Statues - Can make Armor Statues change potition and hold items - [video](https://www.youtube.com/watch?v=nV9-_RacnoI)
-* Custom Nether Portals - Nether portals can have different shapes now - [video](https://www.youtube.com/watch?v=WfqUtUhI7qM)
-* Double Shulker Shells - Killing a shulker will give 2 shells - [video](https://www.youtube.com/watch?v=lfcwKXhjC9Y&t=319s)
-* Track Raw Statistics - Stats tracking
-* Track Statistics - More stats tracking
-
-## Suggested Client Side Mods
-
-The server uses the [Fabric Mod Loader](https://fabricmc.net/use/)
-
-A curseforge profile with the suggested mods and the server pre added can be found [here](https://www.azaleaplays.com/minecraft/curseforge-profiles/Brooke%20Server%20Summer%202022-1.0.zip)
-
-The mods in the profile are summarized below
-
-### [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
-
-* Allows proximity voice chat
-* Version [1.19-2.2.45](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3825854) is required
-* Is compatible with Sound Physics Remastered
-
-### [Better Recipe Books](https://www.curseforge.com/minecraft/mc-mods/brb)
-
-* Adds some quality of life changes to the recipe book
-
-### [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads)
-
-* Shows players head next to chat message
-
-### [Crowmap](https://www.curseforge.com/minecraft/mc-mods/crowmap)
-
-* Updates map in inventory instead of having to hold it
-
-### [DeathLog](https://www.curseforge.com/minecraft/mc-mods/deathlog)
-
-* DeathLog tracks your deaths in all worlds and servers
-
-### [Inventory Sorting](https://www.curseforge.com/minecraft/mc-mods/inventory-sorting)
-
-* Adds multiple ways to sort inventories
-
-### [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
-
-* Shaders mod that works with sodium
-
-### [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)
-
-* Increases framerate and reduces microstutters
-
-### [ShulkerBox Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)
-
-* Shows preview of what's inside shulker boxes
-
-### [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered)
-
-* Adds physics to sounds
-* Works with Simple Voice Chat
-
-### [Spyglass Improvments](https://www.curseforge.com/minecraft/mc-mods/spyglass-improvements)
-
-* Adds various functionality and improvements to the vanilla minecraft spyglass
+* Armored Elytra
+  * Throw an elytra and chestplate on an anvil to combine them
+  * Throw a combined elytra on a grindstone to separate them
+* Armored Carved Pumpkin
+  * Throw a carved pumpkin and helmet on an anvil to combine them
+  * Throw a combined pumpkin on a grindstone to separate them
 
 ### Brooke's Favorite Shaders
 
-* [Complementary](https://www.complementary.dev/)
+* [Complementary](https://modrinth.com/shader/complementary-reimagined)
+* [Rethinking Voxels](https://modrinth.com/shader/rethinking-voxels) - ray tracing Complementary
 * [Slidurs Vibrant Shaders](https://sildurs-shaders.github.io/)
-
-## Custom Recipes
-
-These recipes were pulled from [vanillatweaks](https://vanillatweaks.net/picker/crafting-tweaks/)
-
-![Unpackable Wool](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/unpackable%20wool.png?v2)
-
-![Unpackable Ice](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/unpackable%20ice.png?v2)
-
-![Unpackable Nether Wart](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/unpackable%20nether%20wart.png?v2)
-
-![Craftable Bundles Leather](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20bundles%20leather.png?v2)
-
-![Craftable Name Tags](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20name%20tags.png?v2)
-
-![Craftable Blackstone](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20blackstone.png?v2)
-
-![Craftable Horse Armor](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/craftable%20horse%20armor.png?v2)
-
-![Rotten Flesh to Leather](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/rotten%20flesh%20to%20leather.png?v2)
-
-![Dropper to Dispenser](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/dropper%20to%20dispenser.png?v2)
-
-![Blackstone Cobblestone](https://vanillatweaks.net/assets/resources/previews/craftingtweaks/1.19/blackstone%20cobblestone.png?v2)
-
 
 <br/>
 <br/>
